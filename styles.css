@@ -1,1 +1,112 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    color: #e0f2f1;
+    line-height: 1.6;
+}
 
+header {
+    margin-top: -0.55%;
+    background: linear-gradient(90deg, #E3338E, #8B31DC);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin: 10px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #E3338E;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #E3338E;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.section {
+    padding: 5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Inicio*/
+#inicio {
+    background: linear-gradient(90deg, #E3338E, #8B31DC);
+}
+
+.inicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.inicio_izq {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.inicio_der {
+    display: block;
+    margin: auto;
+    grid-column: 2/ 2;
+    grid-row: 1;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.Explorar_button{
+    background-color:#8C31DB;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+}
