@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: white;
@@ -7,13 +12,13 @@ body {
 
 header {
     margin-top: -0.55%;
-    background: linear-gradient(90deg, #E3338E, #8B31DC);
+    background: linear-gradient(90deg, #E3338E 0%,#C132AC 28%,#B032B9 61%,#9E30C7 76%, #8B31DC 100%);
     backdrop-filter: blur(10px);
     padding: 1.5rem 5%;
     position: sticky;
     top: 0;
     z-index: 100;
-    margin: 10px;
+
 }
 
 .logo {
@@ -65,15 +70,11 @@ nav {
     width: 100%;
 }
 
-.section {
-    padding: 5rem 5%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 /*Inicio*/
 #inicio {
-    background: linear-gradient(90deg, #E3338E, #8B31DC);
+    background: linear-gradient(90deg, #E3338E 0%,#C132AC 28%,#B032B9 61%,#9E30C7 76%, #8B31DC 100%);
 }
 
 .inicio {
@@ -109,4 +110,17 @@ nav {
     border: none;
     padding: 10px;
     font-size: 20px;
+}
+.ola {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+.ola svg {
+    display: block;
+    width: 100%;
+    height: 80px;
 }
